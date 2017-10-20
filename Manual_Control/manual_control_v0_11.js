@@ -30,7 +30,7 @@ process.stdin.on('keypress', function (ch, key) {
 	client.right(0.10);
   }
   if (key.name == 's') {
-	console.log('Go down');
+	console.log('Go backwards');
 	client.back(0.10)
   }
   if (key.name == 'k') {
@@ -46,7 +46,7 @@ process.stdin.on('keypress', function (ch, key) {
 	client.clockwise(0.10);
   }
   if (key.name == 'q') {
-	console.log('Go right');
+	console.log('Turn right');
 	client.counterClockwise(0.10)
   }
   if (key.name == 'l') {
