@@ -7,9 +7,9 @@ CCS811 myCCS811(CCS811_ADDR);
 
 void setup()
 {
-    myCCS811.begin();
-    Serial.begin(115200); // Open up communication between
-    Serial1.begin(57600); // Send Data for Linkit
+    myCCS811.begin(); // Begin communicating with CCS811
+    Serial.begin(115200); // Open serial connection to USB SErial port (connect to your computer)
+    Serial1.begin(57600); // Open internal serial connection to MT7688
 }
 void loop()
 {
