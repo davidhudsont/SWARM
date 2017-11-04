@@ -9,7 +9,7 @@ void setup()
 {
     myCCS811.begin(); // Begin communicating with CCS811
     Serial.begin(115200); // Open serial connection to USB Serial port (connect to your computer)
-    Serial1.begin(57600); // Open internal serial connection to MT7688
+    Serial1.begin(57600); // Open internal serial connection to MT7688 (MPU)
 }
 void loop()
 {
