@@ -1,7 +1,7 @@
 import serial
 import time
 
-ser = serial.Serial('/dev/ttyS0',115200)
+ser = serial.Serial('/dev/ttyS2',115200)
 
 while True:
 	ser.write('Hello\n')
