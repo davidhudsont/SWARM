@@ -7,4 +7,12 @@
 * http://wiki.ros.org/ardrone_autonomy
 * https://www.npmjs.com/package/keypress
 
+## ROS Diagrams
 
+![alt text][logo]
+
+[logo]: https://github.com/davidhudsont/SWARM/tree/master/Images/Master_1_Ardrone.PNG "1 Ardrone"
+
+![alt text][logo2]
+
+[logo2]: https://github.com/davidhudsont/SWARM/tree/master/Images/Master_2_Ardrone.PNG "2 Ardrones"
