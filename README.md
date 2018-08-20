@@ -19,15 +19,21 @@
 
 ## Prototype
 
+### System Overview
 ![alt text][logo3]
 
-[logo3]: https://github.com/davidhudsont/SWARM/blob/master/Images/030.jpg "4 Drone Swarm Prototypes"
+[logo3]: https://github.com/davidhudsont/SWARM/blob/master/Images/Pictograph_System.jpg "System Overview"
+
 
 ![alt text][logo4]
 
-[logo4]: https://github.com/davidhudsont/SWARM/blob/master/Images/032.jpg "Drone Prototype Closeup"
+[logo4]: https://github.com/davidhudsont/SWARM/blob/master/Images/030.jpg "4 Drone Swarm Prototypes"
 
 ![alt text][logo5]
 
-[logo5]: https://github.com/davidhudsont/SWARM/blob/master/Images/024.jpg "Sensor Unit Prototype Closeup"
+[logo5]: https://github.com/davidhudsont/SWARM/blob/master/Images/032.jpg "Drone Prototype Closeup"
+
+![alt text][logo6]
+
+[logo6]: https://github.com/davidhudsont/SWARM/blob/master/Images/024.jpg "Sensor Unit Prototype Closeup"
 
