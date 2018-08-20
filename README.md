@@ -11,7 +11,7 @@
 
 ![alt text][logo]
 
-[logo]: https://github.com/davidhudsont/SWARM/tree/master/Images/Master_1_Ardrone.PNG "1 Ardrone"
+[logo]: https://github.com/davidhudsont/SWARM/blob/master/Images/Master_1_Ardrone.PNG "1 Ardrone"
 
 ![alt text][logo2]
 
