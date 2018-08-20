@@ -15,4 +15,4 @@
 
 ![alt text][logo2]
 
-[logo2]: https://github.com/davidhudsont/SWARM/tree/master/Images/Master_2_Ardrone.PNG "2 Ardrones"
+[logo2]: https://github.com/davidhudsont/SWARM/blob/master/Images/Master_2_Ardrone.PNG "2 Ardrones"
