@@ -3,9 +3,16 @@
 ## Resources :
 * https://github.com/AutonomyLab/ardrone_autonomy
 * http://www.instructables.com/id/Autonomous-AR-Parrot-Drone-20-Flying/
-* https://github.com/felixge/node-ar-drone
 * http://wiki.ros.org/ardrone_autonomy
-* https://www.npmjs.com/package/keypress
+* https://pypi.org/project/paho-mqtt/
+* https://nootrix.com/diy-tutos/ros-indigo-virtual-machine/
+
+## Sensor Unit
+* http://wiki.seeedstudio.com/LinkIt_Smart_7688_Duo/
+* https://www.sparkfun.com/products/14193
+* https://www.sparkfun.com/products/14414
+
+
 
 ## ROS Diagrams
 
