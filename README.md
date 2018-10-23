@@ -7,10 +7,10 @@ https://github.com/davidhudsont/Senior_Project_SWARM/tree/master/Linkit_Publish
 
 
 ## ROS VM Final Code Location
-1. Start a ROS workspace
-* source /bin/<name of workspace>
-* workspace names are found in /home/viki/bin
-* naming scheme : workspace_*.sh
+* Start a ROS workspace
+  * source /bin/<name of workspace>
+  * workspace names are found in /home/viki/bin
+  * naming scheme : workspace_*.sh
 
 ## Ardrone ROS USE Guide
 * Launch
