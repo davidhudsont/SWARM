@@ -14,7 +14,7 @@ https://github.com/davidhudsont/Senior_Project_SWARM/tree/master/Linkit_Publish
 * Final XML in /launch
   * master_ardrone.launch, controller_auto.launch
 
-## Ardrone ROS USE Guide
+## Ardrone ROS User Guide
 * Start a ROS workspace
   * source /bin/<name of workspace>
   * workspace names are found in /home/viki/bin
