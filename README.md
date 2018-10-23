@@ -7,13 +7,15 @@ https://github.com/davidhudsont/Senior_Project_SWARM/tree/master/Linkit_Publish
 
 
 ## ROS VM Final Code Location
+* Final workspace is workspace_testing.sh
+* The final code is located in ardrone_tutorials
+
+## Ardrone ROS USE Guide
 * Start a ROS workspace
   * source /bin/<name of workspace>
   * workspace names are found in /home/viki/bin
   * naming scheme : workspace_*.sh
-
-## Ardrone ROS USE Guide
-* Launch
+  * You then can use the ros utilities
 
 
 ## Resources :
