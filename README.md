@@ -1,9 +1,20 @@
 # SWARM
 
-# Latest Code
+## Latest Code
 * Latest Arduino Code for Linkit is under https://github.com/davidhudsont/Senior_Project_SWARM/tree/master/Linkit_Publish/Linkit_Sensor_GPS
 * Latest MQTT Python Microprocessor Code is at
 https://github.com/davidhudsont/Senior_Project_SWARM/tree/master/Linkit_Publish
+
+
+## ROS VM Final Code Location
+* Start a ROS workspace
+** source /bin/<name of workspace>
+** workspace names are found in /home/viki/bin
+** naming scheme : workspace_*.sh
+
+## Ardrone ROS USE Guide
+* Launch
+
 
 ## Resources :
 * https://github.com/AutonomyLab/ardrone_autonomy
