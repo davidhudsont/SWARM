@@ -8,7 +8,11 @@ https://github.com/davidhudsont/Senior_Project_SWARM/tree/master/Linkit_Publish
 
 ## ROS VM Final Code Location
 * Final workspace is workspace_testing.sh
-* The final code is located in ardrone_tutorials
+* The final code is located in testing_ws/src/ardrone_tutorials/
+* Final Code in /src
+  * master_node.py, controller_node.py, autonmous_node.py
+* Final XML in /launch
+  * master_ardrone.launch, controller_auto.launch
 
 ## Ardrone ROS USE Guide
 * Start a ROS workspace
@@ -16,7 +20,6 @@ https://github.com/davidhudsont/Senior_Project_SWARM/tree/master/Linkit_Publish
   * workspace names are found in /home/viki/bin
   * naming scheme : workspace_*.sh
   * You then can use the ros utilities
-
 
 ## Resources :
 * https://github.com/AutonomyLab/ardrone_autonomy
