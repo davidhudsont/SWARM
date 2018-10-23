@@ -1,8 +1,9 @@
 # SWARM
 
 # Latest Code
-* Latest Arduino Code for Linkit is under
-
+* Latest Arduino Code for Linkit is under https://github.com/davidhudsont/Senior_Project_SWARM/tree/master/Linkit_Publish/Linkit_Sensor_GPS
+* Latest MQTT Python Microprocessor Code is at
+https://github.com/davidhudsont/Senior_Project_SWARM/tree/master/Linkit_Publish
 
 ## Resources :
 * https://github.com/AutonomyLab/ardrone_autonomy
