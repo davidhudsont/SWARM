@@ -16,7 +16,7 @@ https://github.com/davidhudsont/Senior_Project_SWARM/tree/master/Linkit_Publish
 
 ## Ardrone ROS User Guide
 * Start a ROS workspace
-  * source /bin/<name of workspace>
+  * source /bin/'name of workspace.sh'
   * workspace names are found in /home/viki/bin
   * naming scheme : workspace_*.sh
   * You then can use the ros utilities such as roslaunch
