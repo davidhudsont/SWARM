@@ -19,7 +19,13 @@ https://github.com/davidhudsont/Senior_Project_SWARM/tree/master/Linkit_Publish
   * source /bin/<name of workspace>
   * workspace names are found in /home/viki/bin
   * naming scheme : workspace_*.sh
-  * You then can use the ros utilities
+  * You then can use the ros utilities such as roslaunch
+ 
+## Launching ArDrone
+* The master_adrone.launch file in the testing_ws/src/adrone_tutorials/launch
+* Edit the file to launch any one of the labeled ArDrones (FL,FR,RL,RR).
+* roslaunch ardrone_tutorials master_adrone.launch
+
 
  
  
