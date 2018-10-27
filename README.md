@@ -29,6 +29,7 @@ https://github.com/davidhudsont/Senior_Project_SWARM/tree/master/Linkit_Publish
 * http://www.instructables.com/id/Autonomous-AR-Parrot-Drone-20-Flying/
 * http://wiki.ros.org/ardrone_autonomy
 * https://pypi.org/project/paho-mqtt/
+* https://github.com/AutonomyLab/ardrone_autonomy/wiki/Multiple-AR-Drones
 * https://nootrix.com/diy-tutos/ros-indigo-virtual-machine/
 
 ## Sensor Unit
