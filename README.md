@@ -24,9 +24,9 @@ https://github.com/davidhudsont/Senior_Project_SWARM/tree/master/Linkit_Publish
 ## Launching ArDrone
 * open the terminal
 * Setup ROS Workspace
- * source /bin/workspace_testing_ws
+  * source /bin/workspace_testing_ws
 * open up the master_adrone.launch
- * subl testing_ws/src/ardrone_tutorials/launch/master_ardrone.launch
+  * subl testing_ws/src/ardrone_tutorials/launch/master_ardrone.launch
 * set the flags to drone flags to true or false to connect a drone
 * roslaunch ardrone_tutorial master_adrone.launch
 * You should be see some stuff in the terminal
