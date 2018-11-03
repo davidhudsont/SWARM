@@ -45,6 +45,17 @@ https://github.com/davidhudsont/Senior_Project_SWARM/tree/master/Linkit_Publish
 * D-pad = Disables/enables manual control of drones from left to down clockwise = FL,FR,RL,RR Drones (Should be)
  
 
+## Setting Up MQTT Broker
+### Raspberry Pi is only necessary as a broker, other brokers can be used but this tutorial is for setting up a RPi Broker
+* First get a Raspberry Pi with Rasbian OS
+* Then go to https://diyprojects.io/mqtt-mosquitto-communicating-connected-objects-iot/ and follow the tutorial
+* Congratulations your done setting up the broker!
+* Connect the Raspberry Pi to the DroneNet router through ethernet to keep the IP static
+* You will then have to update the python scripts on the sensors to send to the new broker
+
+## Connecting to Sensor Units
+
+
 ## Resources :
 * https://github.com/AutonomyLab/ardrone_autonomy
 * http://www.instructables.com/id/Autonomous-AR-Parrot-Drone-20-Flying/
