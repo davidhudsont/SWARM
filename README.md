@@ -27,13 +27,12 @@ https://github.com/davidhudsont/Senior_Project_SWARM/tree/master/Linkit_Publish
   * source /bin/workspace_testing_ws
 * open up the master_adrone.launch
   * subl testing_ws/src/ardrone_tutorials/launch/master_ardrone.launch
+* set the flags to drone flags to true or false to connect a drone
 ![alt text][logo7]
 
 [logo7]: https://github.com/davidhudsont/Senior_Project_SWARM/blob/master/Images/DroneFlying_Tutorial_02.jpg "Drone Flags"
-
-* set the flags to drone flags to true or false to connect a drone
-* roslaunch ardrone_tutorial master_adrone.launch
-* You should be see some stuff in the terminal
+* Then connect to dronenet and use roslaunch to launch the ArDrone
+  * roslaunch ardrone_tutorials master_ardrone.launch 
 * The controls are listed below
 
 # Ardrone Controls PS4
