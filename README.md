@@ -51,6 +51,8 @@ https://github.com/davidhudsont/Senior_Project_SWARM/tree/master/Linkit_Publish
 * Then go to https://diyprojects.io/mqtt-mosquitto-communicating-connected-objects-iot/ and follow the tutorial
 * Congratulations your done setting up the broker!
 * Connect the Raspberry Pi to the DroneNet router through ethernet to keep the IP static
+* Hook up a monitor, keyboard and mouse
+* open the terminal and type ifconfig to get the ip
 * You will then have to update the python scripts on the sensors to send to the new broker
 
 ## Connecting to Sensor Units
