@@ -22,12 +22,22 @@ https://github.com/davidhudsont/Senior_Project_SWARM/tree/master/Linkit_Publish
   * You then can use the ros utilities such as roslaunch
  
 ## Launching ArDrone
-* The master_adrone.launch file in the testing_ws/src/adrone_tutorials/launch
-* Edit the file to launch any one of the labeled ArDrones (FL,FR,RL,RR).
-* roslaunch ardrone_tutorials master_adrone.launch
+* open the terminal
+* source /bin/workspace_testing_ws
+* open up the master_adrone.launch file located in testing_ws/src/ardrone_tutorials/launch
+* set the flags to drone flags to true or false to connect a drone
+* roslaunch ardrone_tutorial master_adrone.launch
+* You should be see some stuff in the terminal
+* The controls are listed below
 
-
- 
+# Ardrone Controls PS4
+* Left Stick = Forwards, Backwards, Left & Right
+* Right Stick = Rotation, Up & Down
+* X Button = Liftoff
+* Square Button = Emergency
+* Triangle Button = Autonmous Mode
+* Circle Button = Land
+* D-pad = Disables enables manual control of drones from left to down clockwise = FL,FR,RL,RR Drones (Should be)
  
 
 ## Resources :
