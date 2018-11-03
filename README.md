@@ -54,7 +54,18 @@ https://github.com/davidhudsont/Senior_Project_SWARM/tree/master/Linkit_Publish
 * You will then have to update the python scripts on the sensors to send to the new broker
 
 ## Connecting to Sensor Units
-
+* Mobaxterm is usefull for this https://mobaxterm.mobatek.net/
+* Connect to DroneNet
+* Under the tools dropdown menu select newtwork scan
+* type 192.168.1 into IP Address
+* then start scan
+* some of the sensors ip's should show up on there.
+* Then just use ssh to connect
+* Edit the python file called Linkit_MQTTPub.py
+  * vi Linkit_MQTTPub.py
+  * or use Mobaxterm file viewer and open a text editor
+* Then change the ip to the Raspberry Pi Broker IP
+* That should be it
 
 ## Resources :
 * https://github.com/AutonomyLab/ardrone_autonomy
