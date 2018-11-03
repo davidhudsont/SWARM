@@ -39,10 +39,10 @@ https://github.com/davidhudsont/Senior_Project_SWARM/tree/master/Linkit_Publish
 * Left Stick = Forwards, Backwards, Left & Right
 * Right Stick = Rotation, Up & Down
 * X Button = Liftoff
-* Square Button = Emergency
-* Triangle Button = Autonmous Mode
+* Square Button = Emergency Land
+* Triangle Button = Autonomous Mode
 * Circle Button = Land
-* D-pad = Disables enables manual control of drones from left to down clockwise = FL,FR,RL,RR Drones (Should be)
+* D-pad = Disables/enables manual control of drones from left to down clockwise = FL,FR,RL,RR Drones (Should be)
  
 
 ## Resources :
