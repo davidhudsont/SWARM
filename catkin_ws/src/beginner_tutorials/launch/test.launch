@@ -1,0 +1,11 @@
+<launch>
+
+	<node name="talker" pkg="beginner_tutorials" type="talker.py" output="screen" clear_params="true">
+	
+	</node>
+	
+	<node name="listener" pkg="beginner_tutorials" type="listener.py" output="screen" clear_params="true">
+	
+	</node>
+
+</launch>

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "testing")
+set(testing_MAINTAINER "viki <viki@todo.todo>")
+set(testing_DEPRECATED "")
+set(testing_VERSION "0.0.0")
+set(testing_BUILD_DEPENDS "roscpp" "rospy" "std_msgs" "message_generation")
+set(testing_RUN_DEPENDS "roscpp" "rospy" "std_msgs" "message_runtime")
+set(testing_BUILDTOOL_DEPENDS "catkin")

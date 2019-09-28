@@ -1,0 +1,11 @@
+
+
+<launch>
+
+	<node name="talker" pkg="testing" type="talker" output="screen" clear_params="true">
+	</node>
+	
+	<node name="listener" pkg="testing" type="listener" output="screen" clear_params="true">
+	</node>
+
+</launch>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<launch>
+	
+<!--
+	<node name="master" pkg="ardrone_tutorials" type="master_node.py" output="screen" required="true">
+		<param name="node_count" value="2" />
+	</node>
+-->
+	
+<!--
+	<node name="sub" pkg="ardrone_tutorials" type="sub.py" output="screen" required="true">
+		<param name="node_count" value="2" />
+	</node>
+-->
+	
+<!--
+	<arg name="broker_ip" default="192.168.1.150" />
+	<arg name="port" default="1883" />
+	<arg name="tag" default="RR" />
+	
+	<node name="autonomous" pkg="ardrone_tutorials" type="autonomous_node.py" output="screen" required="true">
+		<param name="broker_ip"	type="str"	value="$(arg broker_ip)" />
+		<param name="port" 		type="int"	value="$(arg port)" />
+		<param name="tag" 		type="str"	value="$(arg tag)" />
+	</node>
+-->
+	<arg name="tag" default="FL" />	
+	<arg name="Group" default="/ardrone1" />
+	<node name="sensor" pkg="class_testing" type="pub.py" output="screen" required="true">
+		<param name="node_count" value="2" />
+		<param name="tag" type="str" value="$(arg tag)" />
+		<param name="Group"				value="$(arg Group)" />
+	</node>
+	
+	<node name="controller" pkg="class_testing" type="control.py" output="screen" required="true">
+		<param name="node_count" value="2" />
+		<param name="tag" type="str" value="$(arg tag)" />
+		<param name="Group"				value="$(arg Group)" />
+	</node>
+	
+</launch>

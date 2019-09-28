@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- Launches the AR.Drone driver -->
+	
+  <group ns="ardrone1">
+    <param name="tf_prefix" value="ardrone1" />
+    <include file="$(find testing)/launch/keyboard_controller.launch">
+   
+    </include>
+  </group>
+
+  <!-- Add second drone -->
+  <group ns="ardrone2">
+    <param name="tf_prefix" value="ardrone2" />
+    <include file="$(find testing)/launch/keyboard_controller.launch">
+		
+    </include>
+  </group>
+
+</launch>

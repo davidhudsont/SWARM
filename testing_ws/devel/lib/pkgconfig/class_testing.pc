@@ -1,0 +1,8 @@
+prefix=/home/viki/testing_ws/devel
+
+Name: class_testing
+Description: Description of class_testing
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/viki/testing_ws/devel/lib 
+Requires: 

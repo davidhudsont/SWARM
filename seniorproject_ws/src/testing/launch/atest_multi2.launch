@@ -1,0 +1,18 @@
+<launch>
+
+	<group ns="g1">
+    <param name="node_name" value="pub1" />
+    <include file="$(find testing)/launch/atest.launch">
+    </include>
+  </group>
+
+  <!-- Add second drone -->
+  <group ns="g2">
+    <param name="node_name" value="pub2" />
+    <include file="$(find testing)/launch/atest.launch">
+    </include>
+  </group>
+	
+	
+
+</launch>

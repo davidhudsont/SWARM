@@ -1,0 +1,13 @@
+/home/viki/catkin_ws/install/_setup_util.py
+/home/viki/catkin_ws/install/env.sh
+/home/viki/catkin_ws/install/setup.bash
+/home/viki/catkin_ws/install/setup.sh
+/home/viki/catkin_ws/install/setup.zsh
+/home/viki/catkin_ws/install/.rosinstall
+/home/viki/catkin_ws/install/etc/catkin/profile.d/05.catkin_make.bash
+/home/viki/catkin_ws/install/etc/catkin/profile.d/05.catkin_make_isolated.bash
+/home/viki/catkin_ws/install/share/beginner_tutorials/srv/AddTwoInts.srv
+/home/viki/catkin_ws/install/lib/pkgconfig/beginner_tutorials.pc
+/home/viki/catkin_ws/install/share/beginner_tutorials/cmake/beginner_tutorialsConfig.cmake
+/home/viki/catkin_ws/install/share/beginner_tutorials/cmake/beginner_tutorialsConfig-version.cmake
+/home/viki/catkin_ws/install/share/beginner_tutorials/package.xml

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- Launches the AR.Drone driver -->
+
+	<group ns="ardrone1">
+    <param name="tf_prefix" value="ardrone1" />
+    <include file="$(find testing)/launch/ps4_control.launch">
+		<arg name="Group" default="/ardrone1" />
+    </include>
+  </group>
+  
+	<group ns="ardrone2">
+    <param name="tf_prefix" value="ardrone2" />
+    <include file="$(find testing)/launch/ps4_control.launch">
+		<arg name="Group" default="/ardrone2" />
+    </include>
+  </group>
+	
+	
+</launch>

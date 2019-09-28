@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<launch>
+	
+	<node name="master" pkg="class_testing" type="master_node.py" output="screen" required="true">
+		<param name="node_count" value="2" />
+	</node>
+	
+
+	<arg name="d1" default="false" />
+	<arg name="d2" default="false" />
+
+
+	<group if="$(arg d1)" ns="ardrone1">
+		<include file="$(find class_testing)/launch/lower_master.launch">
+<!--
+			<arg name="broker_ip" default="192.168.1.150" />
+			<arg name="port" default="1883" />
+-->
+			<arg name="tag" value="FR" />
+			<arg name="Group" value="/ardrone1" />
+			
+		</include>
+	 </group>	
+	 
+	 <group if="$(arg d2)" ns="ardrone2">
+		<include file="$(find class_testing)/launch/lower_master.launch">
+<!--
+			<arg name="broker_ip" default="192.168.1.150" />
+			<arg name="port" default="1883" />
+-->
+			<arg name="tag" value="FR" />
+			<arg name="Group" value="/ardrone2" />
+			
+		</include>
+	 </group>
+	 
+
+</launch>

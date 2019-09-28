@@ -1,0 +1,33 @@
+<?xml version="1.0"?> 
+<launch>
+	<!-- Launches the AR.Drone driver -->
+	
+	<node name="joy_node" pkg="joy" type="joy_node" output="screen" clear_params="true">
+		<param name="dev" type="str" value="/dev/input/js2"/>
+	</node>
+	
+	
+	<node name="joy_node2" pkg="joy" type="joy_node" output="screen" clear_params="true">
+		<param name="dev" type="str" value="/dev/input/js2"/>
+	</node>
+
+
+	<group ns="ardrone1">
+		<param name="tf_prefix" value="ardrone1" />
+		<include file="$(find joy)/launch/ps4_control.launch">
+		  <arg name="DroneID" value="FF" />
+		</include>
+	  </group>
+
+	  <!-- Add second drone -->
+	  <group ns="ardrone2">
+		<param name="tf_prefix" value="ardrone2" />
+		<include file="$(find testing)/launch/ps4_control.launch">
+			<arg name="DroneID" value="RR" />
+		</include>
+	  </group>
+	
+</launch>
+
+
+

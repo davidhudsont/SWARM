@@ -1,0 +1,9 @@
+<launch>
+
+	<node name="talker" pkg="testing" type="pub.py" output="screen" clear_params="true">
+	</node>
+	
+	<node name="listener" pkg="testing" type="auto_subscriber.py" output="screen" clear_params="true">
+	</node>
+
+</launch>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<launch>
+	
+	<node name="joy_node" pkg="joy" type="joy_node" output="screen" clear_params="true">
+		<param name="dev" type="str" value="/dev/input/js2"/>
+	</node>
+	
+	<arg name="Group" default="/ardrone1" />
+	<!-- Launches the joystick controller -->
+	<node name="controller_node" pkg="testing" type="simpler_controller_node.py" output="screen" required="true">
+		<!-- Configures the joystick button mapping -->
+		<param name="ButtonEmergency"	value="0" />
+		<param name="ButtonLand"		value="1" />
+		<param name="ButtonTakeoff"		value="2" />
+		<param name="ButtonAuto"		value="3" />
+		
+		<!-- Configures the joystick axis mapping -->
+		<param name="AxisRoll"			value="1" />
+		<param name="AxisPitch"			value="0" />
+		<param name="AxisYaw"			value="2" />
+		<param name="AxisZ"				value="5" />
+
+		<!-- Configures the joystick mapping -->
+		<param name="ScaleRoll"			value="1" />
+		<param name="ScalePitch"		value="1" />
+		<param name="ScaleYaw"			value="1" />
+		<param name="ScaleZ"			value="1" />
+		
+		<param name="Group"				value="$(arg Group)" />
+	</node>
+</launch>
+	

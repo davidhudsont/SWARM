@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- Launches the AR.Drone driver -->
+	
+	<node name="joy_node" pkg="joy" type="joy_node" output="screen" clear_params="true">
+		<param name="dev" type="str" value="/dev/input/js2"/>
+	</node>
+	
+	<group ns="swarm">
+    <param name="tf_prefix" value="swarm" />
+    <include file="$(find testing)/launch/multi_ps4_control.launch">
+		
+    </include>
+  </group>
+	
+	
+</launch>
