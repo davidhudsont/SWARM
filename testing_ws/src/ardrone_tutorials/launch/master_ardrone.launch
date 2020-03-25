@@ -1,0 +1,69 @@
+<?xml version="1.0"?> 
+<!-- Example launch file for multiple AR Drones -->
+<launch>
+  <!-- Include the ardrone launch file for each drone.
+       IMPORTANT: Ensure the namespace for each include is unique. -->
+
+  <arg name="FL" default="true" />
+  <arg name="FR" default="false" />
+  <arg name="RL" default="false" />
+  <arg name="RR" default="true" />
+
+	<node name="master" pkg="ardrone_tutorials" type="master_node.py" output="screen" required="true">
+	   <param name="FL"       value="$(arg FL)" />
+     <param name="FR"       value="$(arg FR)" />
+     <param name="RL"       value="$(arg RL)" />
+     <param name="RR"       value="$(arg RR)" />
+	</node>
+
+
+  <group if="$(arg FL)" ns="ardrone1">
+    <param name="tf_prefix" value="ardrone1" />
+    <include file="$(find ardrone_tutorials)/launch/controller_auto.launch">
+      <arg name="ip" value="192.168.1.10" />
+      <arg name="freq" value="7" />
+      <arg name="broker_ip" default="192.168.1.150" />
+      <arg name="port" default="1883" />
+      <arg name="tag" value="FL" />
+    </include>
+  </group>
+
+  <!-- Add second drone -->
+
+  <group if="$(arg FR)" ns="ardrone2">
+    <param name="tf_prefix" value="ardrone2" />
+    <include file="$(find ardrone_tutorials)/launch/controller_auto.launch">
+      <arg name="ip" value="192.168.1.11" />
+      <arg name="freq" value="7" />
+      <arg name="broker_ip" value="192.168.1.150" />
+      <arg name="port" value="1883" />
+      <arg name="tag" value="FR" />
+    </include>
+  </group>
+
+<group if="$(arg RL)" ns="ardrone3">
+    <param name="tf_prefix" value="ardrone3" />
+    <include file="$(find ardrone_tutorials)/launch/controller_auto.launch">
+      <arg name="ip" value="192.168.1.12" />
+      <arg name="freq" value="8" />
+      <arg name="broker_ip" value="192.168.1.150" />
+      <arg name="port" value="1883" />
+      <arg name="tag" value="RL" />
+    </include>
+  </group>
+ 
+
+  <group if="$(arg RR)" ns="ardrone4">
+    <param name="tf_prefix" value="ardrone4" />
+    <include file="$(find ardrone_tutorials)/launch/controller_auto.launch">
+      <arg name="ip" value="192.168.1.13" />
+      <arg name="freq" value="8" />
+      <arg name="broker_ip" value="192.168.1.150" />
+      <arg name="port" value="1883" />
+      <arg name="tag" value="RR" />
+    </include>
+  </group>
+
+
+
+</launch>

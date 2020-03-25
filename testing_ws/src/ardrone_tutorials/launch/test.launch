@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+	
+
+	<node name="test_node" pkg="ardrone_tutorials" type="ros_class_ex.py" output="screen" clear_params="true">
+		<param name="x" 		type="int"	value="30" />
+		<param name="y" 		type="int"	value="5" />
+	</node>
+	
+	
+</launch>

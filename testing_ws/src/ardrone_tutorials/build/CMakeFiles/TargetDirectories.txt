@@ -1,0 +1,7 @@
+/home/viki/final_senior_ws/src/ardrone_tutorials/build/CMakeFiles/_catkin_empty_exported_target.dir
+/home/viki/final_senior_ws/src/ardrone_tutorials/build/CMakeFiles/clean_test_results.dir
+/home/viki/final_senior_ws/src/ardrone_tutorials/build/CMakeFiles/doxygen.dir
+/home/viki/final_senior_ws/src/ardrone_tutorials/build/gtest/CMakeFiles/gtest.dir
+/home/viki/final_senior_ws/src/ardrone_tutorials/build/gtest/CMakeFiles/gtest_main.dir
+/home/viki/final_senior_ws/src/ardrone_tutorials/build/CMakeFiles/run_tests.dir
+/home/viki/final_senior_ws/src/ardrone_tutorials/build/CMakeFiles/tests.dir

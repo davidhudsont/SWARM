@@ -1,0 +1,52 @@
+<?xml version="1.0"?> 
+<!-- Example launch file for multiple AR Drones -->
+<launch>
+
+	<arg name="FL" default="false" />
+	<arg name="FR" default="true" />
+	<arg name="RL" default="true" />
+	<arg name="RR" default="false" />
+
+
+	<group if="$(arg FL)" ns="node1">
+		<include file="$(find ardrone_tutorials)/launch/autonomous.launch">
+		  <arg name="broker_ip" default="192.168.1.150" />
+		  <arg name="port" default="1883" />
+		  <arg name="tag" value="FL" />
+		</include>
+    </group>
+
+	<group if="$(arg FR)" ns="node2">
+		<include file="$(find ardrone_tutorials)/launch/autonomous.launch">
+		  <arg name="broker_ip" default="192.168.1.150" />
+		  <arg name="port" default="1883" />
+		  <arg name="tag" value="FR" />
+		</include>
+    </group>
+
+
+  <!-- Add second drone -->
+  
+  <group if="$(arg RL)" ns="node3">
+		<include file="$(find ardrone_tutorials)/launch/autonomous.launch">
+		  <arg name="broker_ip" default="192.168.1.150" />
+		  <arg name="port" default="1883" />
+		  <arg name="tag" value="RL" />
+		</include>
+    </group>
+  
+  
+
+	<group if="$(arg RR)" ns="node4">
+		<include file="$(find ardrone_tutorials)/launch/autonomous.launch">
+		  <arg name="broker_ip" default="192.168.1.150" />
+		  <arg name="port" default="1883" />
+		  <arg name="tag" value="RR" />
+		</include>
+    </group>
+
+
+	
+	
+</launch>
+

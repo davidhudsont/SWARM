@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="ip" default="192.168.1.10" />
+	<arg name="freq" default="8" />
+	<!-- Launches the AR.Drone driver -->
+	<node name="ardrone_driver" pkg="ardrone_autonomy" type="ardrone_driver" output="screen" clear_params="true" args="-ip $(arg ip)" >
+	    <param name="outdoor" value="0" />				<!-- If we are flying outdoors, will select more aggressive default settings -->
+	    <param name="flight_without_shell" value="0" /> <!-- Changes internal controller gains if we are flying without the propeller guard -->
+
+	    <param name="navdata_demo" value="0" />
+	    <param name="altitude_max" value="5000" />		<!-- in millimeters = 3 meters = 9' -->
+        <param name="altitude_min" value="50" />		<!-- in millimeters = 5cm = 2" -->
+
+        <param name="euler_angle_max" value="0.15" />	<!-- maximum allowable body angle in radians = 5 degrees -->
+        <param name="control_vz_max" value="600" />		<!-- maximum z velocity in mm/sec = 0.2m/sec -->
+	    <param name="control_yaw" value="1.5" />		<!-- maximum rotation rate in radians/sec = 40 degrees per second (1/9 rev/sec) -->
+
+<!-- 	    <param name="control_vz_max" value="2000" />
+        <param name="control_yaw" value="6.11" />
+        <param name="euler_angle_max" value="0.35" /> -->
+
+	    <param name="detect_type" value="10" />
+	    <param name="detections_select_h" value="32" />	<!-- In the horizontal camera, look for the orange-blue-orange markers -->
+	    <param name="detections_select_v_hsync" value="128" />  <!-- In the vertical camera, detect the A4 marker -->
+	    <param name="enemy_colors" value="3" />			<!-- Orange-Blue-Orange = 3 -->
+	    <param name="enemy_without_shell" value="0" />	<!-- Detect the indoor stickers, rather than the outdoor hull -->
+	    <param name="realtime_navdata" value="true" />
+	    <param name="ultrasound_freq" value="$(arg freq)" />
+	    <!-- <param name="enable_navdata_wifi" value = "true"  /> -->
+	    <rosparam param="cov/imu_la">[0.1, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.1]</rosparam>
+        <rosparam param="cov/imu_av">[1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]</rosparam>
+        <rosparam param="cov/imu_or">[1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 100000.0]</rosparam>
+	</node>
+
+	<node name="joy_node" pkg="joy" type="joy_node" output="screen" clear_params="true">
+		<param name="dev" type="str" value="/dev/input/js2"/>
+	</node>
+	
+	
+	<!-- <arg name="Group" default="ardrone1" /> -->
+	<!-- Launches the joystick controller -->
+	<node name="controller_node" pkg="ardrone_tutorials" type="controller_node.py" output="screen" required="true">
+		<!-- Configures the joystick button mapping -->
+		<param name="ButtonEmergency"	value="0" />
+		<param name="ButtonLand"		value="2" />
+		<param name="ButtonTakeoff"		value="1" />
+		<param name="ButtonAuto"		value="3" />
+		
+
+		<!-- Configures the joystick axis mapping -->
+		<param name="AxisRoll"			value="0" />
+		<param name="AxisPitch"			value="1" />
+		<param name="AxisYaw"			value="2" />
+		<param name="AxisZ"				value="5" />
+
+		<!-- Configure Rotation D PAD -->
+		<param name="AxisUD"			value="7" />
+		<param name="AxisLR"			value="6" />
+
+		<!-- Configures the joystick mapping -->
+		<param name="ScaleRoll"			value="1" />
+		<param name="ScalePitch"		value="1" />
+		<param name="ScaleYaw"			value="1" />
+		<param name="ScaleZ"			value="1" />
+		
+		<!-- <param name="Group"				value="$(arg Group)" /> -->
+		<param name="DroneID"			value="$(arg tag)" />
+		
+	</node>
+	
+	<arg name="broker_ip" default="192.168.1.150" />
+	<arg name="port" default="1883" />
+	<arg name="tag" default="FL" />
+	
+	<node name="sensor_node" pkg="ardrone_tutorials" type="autonomous_node.py" output="screen" required="true">
+		<param name="broker_ip"	type="str"	value="$(arg broker_ip)" />
+		<param name="port" 		type="int"	value="$(arg port)" />
+		<param name="tag" 		type="str"	value="$(arg tag)" />
+		<!-- <param name="Group"				value="$(arg Group)" /> -->
+	</node>
+</launch>

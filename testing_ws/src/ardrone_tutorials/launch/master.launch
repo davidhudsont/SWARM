@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<launch>
+	
+	<node name="master" pkg="ardrone_tutorials" type="master_node.py" output="screen" required="true">
+		<param name="node_count" value="2" />
+	</node>
+	
+	<group ns="master/node1">
+		<include file="$(find ardrone_tutorials)/launch/lower_master.launch">
+<!--
+			<arg name="broker_ip" default="192.168.1.150" />
+			<arg name="port" default="1883" />
+-->
+			<arg name="tag" value="FL" />
+		</include>
+	 </group>
+	
+	<group ns="master/node2">
+		<include file="$(find ardrone_tutorials)/launch/lower_master.launch">
+<!--
+			<arg name="broker_ip" default="192.168.1.150" />
+			<arg name="port" default="1883" />
+-->
+			<arg name="tag" value="FR" />
+		</include>
+	 </group>	
+
+</launch>
