@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+	
+	
+	<arg name="tag" default="FL" />
+	
+	<arg name="Group" default="/ardrone1" />
+	<!-- Launches the joystick controller -->
+	<node name="simul_controller_node" pkg="ardrone_tutorials" type="simul_controller_node.py" output="screen" required="true">
+		<!-- Configures the joystick button mapping -->
+		<param name="DroneID"			value="$(arg tag)" />
+		
+	</node>
+	
+	<node name="simul_autonomous_node" pkg="ardrone_tutorials" type="simul_autonomous_node.py" output="screen" required="true">
+		
+	</node>
+</launch>

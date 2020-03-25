@@ -1,0 +1,34 @@
+<?xml version="1.0"?> 
+<!-- Example launch file for multiple AR Drones -->
+<launch>
+  <!-- Include the ardrone launch file for each drone.
+       IMPORTANT: Ensure the namespace for each include is unique. -->
+
+  <group ns="ardrone1">
+    <param name="tf_prefix" value="/ardrone1" />
+    <include file="$(find ardrone_tutorials)/launch/controller_auto.launch">
+	  <arg name="Group" value="/ardrone1" />
+      <arg name="ip" value="192.168.1.10" />
+      <arg name="freq" value="7" />
+      <arg name="broker_ip" default="192.168.1.150" />
+      <arg name="port" default="1883" />
+      <arg name="tag" value="FL" />
+    </include>
+  </group>
+
+  <!-- Add second drone -->
+<!--
+  <group ns="ardrone2">
+    <param name="tf_prefix" value="/ardrone2" />
+    <include file="$(find ardrone_tutorials)/launch/controller_auto.launch">
+	  <arg name="Group" value="/ardrone2" />
+      <arg name="ip" value="192.168.1.11" />
+      <arg name="freq" value="8" />
+      <arg name="broker_ip" value="192.168.1.150" />
+      <arg name="port" value="1883" />
+      <arg name="tag" value="RR" />
+    </include>
+  </group>
+-->
+
+</launch>

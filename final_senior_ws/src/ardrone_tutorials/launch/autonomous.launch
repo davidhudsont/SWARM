@@ -1,0 +1,16 @@
+<?xml version="1.0"?> 
+<!-- Example launch file for multiple AR Drones -->
+<launch>
+
+	<arg name="broker_ip" default="192.168.1.150" />
+	<arg name="port" default="1883" />
+	<arg name="tag" default="FL" />
+	
+	<node name="autonomous" pkg="ardrone_tutorials" type="autonomous_node.py" output="screen" clear_params="true" >
+		<param name="broker_ip" value="$(arg broker_ip)" />
+		<param name="port" type="int" value="$(arg port)" />
+		<param name="tag" type="str" value="$(arg tag)" />
+	</node>
+	
+</launch>
+
