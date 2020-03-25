@@ -1,0 +1,8 @@
+prefix=/home/viki/seniorproject_ws/src/ardrone/build/devel
+
+Name: ardrone_tutorials
+Description: Description of ardrone_tutorials
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/viki/seniorproject_ws/src/ardrone/build/devel/lib 
+Requires: 
